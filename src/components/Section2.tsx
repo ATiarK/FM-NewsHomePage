@@ -19,7 +19,9 @@ const Contents = [
 
 export default function Section2() {
   return (
-    <div style={bgDark} className="grid grid-flow-row px-5">
+    <div
+      style={bgDark}
+      className="grid grid-flow-row col-span-2 lg:col-span-1 px-8">
       <h2 className="text-4xl my-auto font-bold" style={colorOrange}>
         New
       </h2>
@@ -28,7 +30,7 @@ export default function Section2() {
           <h5 className="font-bold text-base" style={colorWhite}>
             {x.title}
           </h5>
-          <h6 className="text-sm" style={colorLiGray}>
+          <h6 className="text-sm tracking-wide" style={colorLiGray}>
             {x.content}
           </h6>
         </div>

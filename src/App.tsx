@@ -7,7 +7,7 @@ function App() {
   return (
     <Layout>
       <Header />
-      <div className="grid grid-cols-3 gap-6 py-8">
+      <div className="grid grid-cols-2 xl:grid-cols-3 gap-6 py-8">
         <Section1 />
         <Section2 />
       </div>
