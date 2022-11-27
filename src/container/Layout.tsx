@@ -1,7 +1,4 @@
-import { ReactNode } from 'react';
-type LayoutProps = {
-  children?: ReactNode;
-};
+import LayoutProps from '../interfaces';
 
 export default function Layout({ children }: LayoutProps) {
   return (
