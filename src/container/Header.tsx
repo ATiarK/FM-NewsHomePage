@@ -1,9 +1,16 @@
 import Logo from '../assets/images/logo.svg';
 import MenuOpen from '../assets/images/icon-menu.svg';
+import MenuClose from '../assets/images/icon-menu-close.svg';
+import Sidebar from '../components/Sidebar';
+import { useState } from 'react';
 
 export const MenuList = ['Home', 'New', 'Popular', 'Trending', 'Categories'];
-
-export default function Header() {
+type HeaderProp = {
+  open?: boolean;
+  onClick?: () => void;
+};
+export default function Header(props: HeaderProp) {
+  const { open, onClick } = props;
   return (
     <div className="flex justify-between p-2 h-16">
       <img src={Logo} alt="logo" className="p-1" />
@@ -14,8 +21,13 @@ export default function Header() {
           </div>
         ))}
       </div>
-      <button className="md:hidden block my-auto p-0">
-        <img src={MenuOpen} alt="menu" className="" />
+
+      <button onClick={onClick} className="md:hidden flex p-1 my-auto">
+        {open ? (
+          <img src={MenuClose} alt="menu" className=" object-contain h-8" />
+        ) : (
+          <img src={MenuOpen} alt="menu" className=" object-contain h-6" />
+        )}
       </button>
     </div>
   );

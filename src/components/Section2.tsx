@@ -4,8 +4,8 @@ import { bgDark, colorLiGray, colorOrange, colorWhite } from '../config/color';
 export default function Section2() {
   return (
     <div
-      style={bgDark}
-      className="grid grid-flow-row col-span-2 lg:col-span-1 p-8">
+      className="grid grid-flow-row col-span-2 lg:col-span-1 p-8"
+      style={bgDark}>
       <h2 className="text-4xl my-auto font-bold" style={colorOrange}>
         New
       </h2>
