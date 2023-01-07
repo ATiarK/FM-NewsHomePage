@@ -1,10 +1,13 @@
-import BigBanner from '../assets/images/image-web-3-desktop.jpg';
-import SmallBanner from '../assets/images/image-web-3-mobile.jpg';
-import { bgOrange, colorDkGray } from '../config/color';
+import BigBanner from "../assets/images/image-web-3-desktop.jpg";
+import SmallBanner from "../assets/images/image-web-3-mobile.jpg";
+import { bgOrange, colorDkGray } from "../config/color";
 
 export default function Section1() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 col-span-2">
+    <section
+      id="section-01"
+      className="grid grid-cols-1 lg:grid-cols-2 gap-4 col-span-2"
+    >
       <img src={BigBanner} alt="logo" className="lg:col-span-2" />
       <h1 className="text-5xl font-extrabold">The Bright Future of Web 3.0?</h1>
       <div className="flex flex-col justify-start">
@@ -17,6 +20,6 @@ export default function Section1() {
           READ MORE
         </button>
       </div>
-    </div>
+    </section>
   );
 }

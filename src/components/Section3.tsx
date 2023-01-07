@@ -1,28 +1,12 @@
-import { SubContents } from '../assets/WrittenContent';
-import { colorDkGray, colorLiGray } from '../config/color';
-import { ICube } from '../interfaces';
-
-function Cube(props: ICube) {
-  const { Image, Num, Title, Content } = props;
-  return (
-    <div className="grid grid-cols-3 gap-6">
-      <img src={Image} alt="mini-img" className="h-auto w-max" />
-      <div className="grid grid-cols-1 col-span-2">
-        <h2 className="text-4xl font-bold" style={colorLiGray}>
-          {Num}
-        </h2>
-        <h6 className="text-xl font-extrabold">{Title}</h6>
-        <p className="text-lg font-medium" style={colorDkGray}>
-          {Content}
-        </p>
-      </div>
-    </div>
-  );
-}
+import { SubContents } from "../assets/WrittenContent";
+import { Cube } from "./Container";
 
 export default function Section3() {
   return (
-    <div className="grid grid-cols-1 col-span-2 md:col-span-3 md:grid-cols-3 gap-8">
+    <section
+      id="section-03"
+      className="grid grid-cols-1 col-span-2 md:col-span-3 md:grid-cols-3 gap-8"
+    >
       {SubContents.map((x, i) => (
         <Cube
           key={i}
@@ -32,6 +16,6 @@ export default function Section3() {
           Content={x.Content}
         />
       ))}
-    </div>
+    </section>
   );
 }
