@@ -5,6 +5,7 @@ export default function Section3() {
   return (
     <section
       id="section-03"
+      role="subcontent"
       className="grid grid-cols-1 col-span-2 md:col-span-3 md:grid-cols-3 gap-8"
     >
       {SubContents.map((x, i) => (

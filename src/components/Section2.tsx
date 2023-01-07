@@ -5,6 +5,7 @@ export default function Section2() {
   return (
     <section
       id="section-02"
+      role="side-content"
       className="grid grid-flow-row col-span-2 lg:col-span-1 p-8"
       style={bgDark}
     >

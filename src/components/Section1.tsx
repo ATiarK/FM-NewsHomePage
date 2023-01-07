@@ -6,6 +6,7 @@ export default function Section1() {
   return (
     <section
       id="section-01"
+      role="main-content"
       className="grid grid-cols-1 lg:grid-cols-2 gap-4 col-span-2"
     >
       <img src={BigBanner} alt="logo" className="lg:col-span-2" />
